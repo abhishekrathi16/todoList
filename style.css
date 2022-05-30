@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 2.5rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form input{
+    min-width: 40%;
+}
+
+form button{
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #d88771;
+    color: white;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    color: #ff6f47;
+    width: 13rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #ff6f47;
+    top: 0px;
+    right: 0px;
+    padding: 1px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    color: #ff6f47;
+    background: white;
+}
+
